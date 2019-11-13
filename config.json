@@ -23,7 +23,7 @@
 	"logToDatabase": false,
 	"graphDuration": 86400000,
 	"serverCategories": {
-		"java": "Java Edition Servers"
+		"java": "Java Edition Servers",
 		"bedrock": "Bedrock Edition Servers"
 	},
 	"versions": {
