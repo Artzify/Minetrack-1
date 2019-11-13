@@ -1,0 +1,298 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300,400);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #212021;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300 !important;
+}
+
+/* Page layout */
+html, body {
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+#push {
+    position: relative;
+    min-height: 100%;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* Constants */
+#header, #footer, #tagline {
+
+}
+
+/* Header */
+#header {
+    background: #EBEBEB;
+    color: #3B3738;
+    overflow: auto;
+}
+
+#header-wrapper {
+    overflow: auto;
+    min-width: 850px;
+}
+
+#header .column {
+    display: inline-block;
+    float: left;
+}
+
+#header .column h1 {
+    margin: -6px 0;
+}
+
+#header .slogan {
+    font-size: 20px;
+    text-align: left;
+}
+
+#header .subslogan {
+    font-size: 19px;
+}
+
+#header a, #footer a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px dashed #3B3738;
+}
+
+#header a:hover, #footer a:hover {
+    border-bottom: 1px dashed transparent;
+}
+
+#header > h1 {
+    font-size: 42px;
+}
+
+#header > #column-center {
+    width: 1480px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer */
+#footer {
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #EBEBEB;
+    color: #3B3738;
+    padding: 15px 0;
+    min-width: 950px;
+    margin-top: 15px;
+}
+
+#footer a {
+    font-weight: 700;
+    border-bottom: none !important;
+}
+
+#footer a:hover {
+    border-bottom: 1px dashed #000 !important;
+}
+
+/* Tagline */
+#tagline-text {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Server listing */
+.server-container {
+    overflow: auto;
+    display: flex; flex-wrap: wrap; justify-content: center;
+}
+
+.server {
+    padding: 5px 10px;
+    margin: 0 5px;
+    width: 738px;
+    border: 1px solid transparent;
+    display: inline-block;
+}
+
+.version {
+	font-size: 14px;
+}
+
+/*.server:hover {
+    background: #282828;
+    border: 1px solid #444;
+    cursor: pointer;
+    border-radius: 2px;
+}*/
+
+.server > .column > img {
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+.server > .column {
+    float: left;
+    display: inline-block;
+}
+
+.server > .column > .rank {
+    width: 64px;
+    padding-top: 4px;
+}
+
+.server > .column > h3 > .type {
+    padding: 1px 5px;
+    border-radius: 2px;
+    border: 1px solid #A09E9E;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.category-header {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    text-align: left;
+    display: none;
+}
+
+.server-meta {
+    font-size: 16px !important;
+}
+
+/* Charts */
+.chart {
+    height: 100px;
+    width: 400px;
+    margin-right: -3px;
+    margin-bottom: 5px;
+}
+
+#tooltip {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 10000;
+}
+
+/* Existing elements */
+h3 {
+    text-transform: uppercase;
+}
+
+/* Basic classes used randomly */
+.color-gray {
+    color: #C4C4C4;
+}
+
+.color-dark-gray {
+    color: #A3A3A3;
+}
+
+.color-red {
+    color: #e74c3c;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center-align {
+    text-align: center;
+}
+
+/* The big graph */
+#big-graph, #big-graph-controls, #big-graph-checkboxes {
+    width: 90%;
+    margin: 15px auto 0 auto;
+}
+
+#big-graph-checkboxes > table {
+    width: 100%;
+}
+
+#big-graph {
+    margin-top: 20px;
+}
+
+#big-graph-controls {
+    margin: 10px auto;
+}
+
+#big-graph-controls a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #FFF;
+    font-size: 16px;
+}
+
+#big-graph-controls a:hover {
+    border-bottom: 1px dashed transparent;
+}
+
+/* Basic elements */
+.button {
+    background: #3498db;
+    border-radius: 2px;
+    text-shadow: 0 0 0 #000;
+    width: 85px;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0 auto;
+}
+
+.button:hover {
+    background: #ecf0f1;
+    color: #3498db;
+    cursor: pointer;
+}
+
+/* Percentage bar */
+#perc-bar {
+    height: 35px;
+    position: relative;
+}
+
+#perc-bar > .perc-bar-part {
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    transition: 0.1s all;
+}
+
+#perc-bar > .perc-bar-part:hover {
+    opacity: 0.75;
+}
+
+/* Mojang Status */
+.mojang-status {
+    width: 85px;
+    height: 106px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.mojang-status > strong {
+    text-transform: uppercase;
+}
+
+.mojang-status > i {
+    margin-top: 20px;
+    font-size: 22px;
+}
