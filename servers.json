@@ -1,0 +1,14 @@
+[
+	{
+		"name": "VileGN",
+		"ip": "vilegn.minehut.gg",
+		"type": "PC",
+		"category": "java"
+	},
+	{
+		"name": "VileMC",
+		"ip": "play.vilemc.net",
+		"type": "PC",
+		"category": "java"
+	}
+]
